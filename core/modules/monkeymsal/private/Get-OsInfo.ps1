@@ -28,7 +28,7 @@
         #Set ScriptBlock
         $ScriptBlock = {
             try{
-                $files = $args[0]
+                $files = $args
                 $Assemblies = [System.Collections.Generic.List[string]]::new()
                 if($null -ne $files){
                     foreach ($file in $files) {
